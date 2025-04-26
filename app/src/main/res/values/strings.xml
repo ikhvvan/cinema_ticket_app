@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Cinema Ticket App</string>
+    <string name="title_register">Register</string>
+    <string name="title_home">Home</string>
+    <string name="title_movie_detail">Movie Details</string>
+    <string name="title_select_seats">Select Seats</string>
+
+    // Register Activity
+    <string name="create_account">Buat Akun</string>
+    <string name="fill_info">Isi informasi Anda untuk membuat akun</string>
+    <string name="full_name">Nama Lengkap</string>
+    <string name="email">Email</string>
+    <string name="password">Kata Sandi</string>
+    <string name="confirm_password">Konfirmasi Kata Sandi</string>
+    <string name="register">Daftar</string>
+    <string name="already_have_account">Sudah punya akun? Masuk</string>
+    <string name="Logout">Logout</string>
+
+    // item Movie
+    <string name="movie_poster_desc">Movie poster image</string>
+    <string name="rating_format">%.1f/10</string>
+    <string name="error_loading_movies">Error loading movies</string>
+</resources>
