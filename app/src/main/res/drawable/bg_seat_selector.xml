@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Selected seat (Orange) -->
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/seat_selected"/> <!-- #FF9800 -->
+            <corners android:radius="4dp"/>
+        </shape>
+    </item>
+    <!-- Available seat (Green) -->
+    <item android:state_enabled="true" android:state_selected="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/seat_available"/> <!-- #4CAF50 -->
+            <corners android:radius="4dp"/>
+        </shape>
+    </item>
+    <!-- Booked seat (Red) -->
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/seat_booked"/> <!-- #F44336 -->
+            <corners android:radius="4dp"/>
+        </shape>
+    </item>
+</selector>

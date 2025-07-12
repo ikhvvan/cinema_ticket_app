@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.rizkimuhammadmukti.cinematicketapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".CinemaTicketApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CinemaTicketApp"
+        tools:targetApi="31"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <!-- Login Activity (Main Launcher) -->
+        <activity
+            android:name=".ui.auth.LoginActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.CinemaTicketApp.NoActionBar"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Register Activity -->
+        <activity
+            android:name=".ui.auth.RegisterActivity"
+            android:exported="false"
+            android:label="@string/title_register"
+            android:theme="@style/Theme.CinemaTicketApp.NoActionBar"
+            android:parentActivityName=".ui.auth.LoginActivity"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <!-- Main Home Activity -->
+        <activity
+            android:name=".ui.home.HomeActivity"
+            android:exported="false"
+            android:label="@string/title_home"
+            android:theme="@style/Theme.CinemaTicketApp.NoActionBar"/>
+
+        <!-- Schedule Activity -->
+        <activity
+            android:name=".ui.schedule.ScheduleActivity"
+            android:exported="false"
+            android:label="@string/title_select_seats"
+            android:parentActivityName=".ui.home.HomeActivity"
+            android:theme="@style/Theme.CinemaTicketApp.NoActionBar"/>
+
+        <!-- Seat Selection Activity -->
+        <activity
+            android:name=".ui.seats.SeatSelectionActivity"
+            android:exported="false"
+            android:label="@string/title_select_seats"
+            android:parentActivityName=".ui.schedule.ScheduleActivity"
+            android:theme="@style/Theme.CinemaTicketApp.NoActionBar"/>
+        <!-- Payment Activity -->
+        <activity
+            android:name=".ui.payment.PaymentActivity"
+            android:exported="false"
+            android:label="@string/title_payment"
+            android:parentActivityName=".ui.seats.SeatSelectionActivity"
+            android:theme="@style/Theme.CinemaTicketApp.NoActionBar"/>
+        <activity
+            android:name=".ui.ticket.ETicketActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <!-- Hapus MainActivity yang tidak digunakan -->
+        <!-- <activity android:name=".MainActivity" ... /> -->
+    </application>
+
+</manifest>

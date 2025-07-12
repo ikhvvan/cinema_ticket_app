@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">Cinema Ticket App</string>
+    <string name="title_register">Register</string>
+    <string name="title_home">Home</string>
+    <string name="title_movie_detail">Movie Details</string>
+    <string name="title_select_seats">Select Seats</string>
+
+    // Navbar
+    <string name="movies">Movies</string>
+    <string name="cinemas">Cinemas</string>
+    <string name="tickets">Tickets</string>
+    <string name="cinema_logo">Cinema Logo</string>
+
+    // Register Activity
+    <string name="create_account">Buat Akun</string>
+    <string name="fill_info">Isi informasi Anda untuk membuat akun</string>
+    <string name="full_name">Nama Lengkap</string>
+    <string name="email">Email</string>
+    <string name="password">Kata Sandi</string>
+    <string name="confirm_password">Konfirmasi Kata Sandi</string>
+    <string name="register">Daftar</string>
+    <string name="already_have_account">Sudah punya akun? Masuk</string>
+    <string name="Logout">Logout</string>
+
+    // item Movie
+    <string name="movie_poster_desc">Movie poster image</string>
+    <string name="rating_format">%.1f/10</string>
+    <string name="error_loading_movies">Error loading movies</string>
+    <string name="booking">Pesan</string>
+
+    // Pesan Tiket
+    <string name="movie_poster_desc2">Poster for %1$s movie</string>
+    <string name="movie_title_sample">Avengers: Endgame</string>
+    <string name="movie_genre_sample">Action, Adventure, Sci-Fi</string>
+    <string name="movie_duration_sample">3h 1m</string>
+    <string name="select_date">Pilih Tanggal</string>
+    <string name="select_cinema">Pilih Bioskop</string>
+    <string name="select_time">Pilih Jam Tayang</string>
+    <string name="continue_text">Lanjutkan</string>
+
+
+    // Pembayaran
+    <string name="order_summary">Order Summary</string>
+    <string name="seats_label">Seats:</string>
+    <string name="total_label">Total:</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="credit_card">Credit Card</string>
+    <string name="bank_transfer">Bank Transfer</string>
+    <string name="e_wallet">E-Wallet</string>
+    <string name="payment_successful">Payment Successful!</string>
+    <string name="back">Back</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="title_payment">Payment</string>
+    <string name="confirm_selection">Confirm Selection</string>
+    <string name="select_seats_first">Please select seats first</string>
+    <string name="seats_selected">Selected %1$d seats: %2$s</string>
+    // Eticket
+    <string name="title_eticket">E-Ticket</string>
+    <string name="eticket_header">E-TICKET</string>
+    <string name="order_details">Order Details</string>
+    <string name="order_date">Order Date:</string>
+    <string name="scan_barcode">Scan this barcode at the cinema</string>
+    <string name="done">Done</string>
+</resources>

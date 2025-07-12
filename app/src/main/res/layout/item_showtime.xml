@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/btnShowtime"
+    android:layout_width="100dp"
+    android:layout_height="48dp"
+    android:layout_margin="8dp"
+    android:background="@drawable/bg_showtime_button"
+    android:enabled="true"
+    android:textColor="@color/showtime_text"
+    android:textSize="14sp"
+    android:focusable="true"
+    android:clickable="true"/>
